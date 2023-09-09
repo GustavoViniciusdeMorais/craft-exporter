@@ -1,5 +1,5 @@
 {
-    "name": "gustavoviniciusdemorais/craft-export-entries",
+    "name": "gustavoviniciusdemorais/craftexportentries",
     "description": "Your plugin’s package description",
     "type": "craft-plugin",
     "keywords": ["export", "import", "entries"],
