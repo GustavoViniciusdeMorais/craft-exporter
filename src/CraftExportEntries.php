@@ -51,13 +51,20 @@ class CraftExportEntries extends Plugin
         //     $this->id,
         //     __DIR__
         // ]));echo "\n\n";exit;
-        Event::on(
-            View::class,
-            View::EVENT_REGISTER_CP_TEMPLATE_ROOTS,
-            function (RegisterTemplateRootsEvent $e) {
-                $e->roots[$this->id] = __DIR__ . '/adapters/ui/templates';
-                // print_r(json_encode([$e->roots[$this->id]]));echo "\n\n";exit;
-            }
-        );
+        // Event::on(
+        //     View::class,
+        //     View::EVENT_REGISTER_CP_TEMPLATE_ROOTS,
+        //     function(RegisterTemplateRootsEvent $event) {
+        //         $event->roots['craftexportentries'] = __DIR__ . '/adapters/ui/templates';
+        //     }
+        // );
+        // Event::on(
+        //     View::class,
+        //     View::EVENT_REGISTER_CP_TEMPLATE_ROOTS,
+        //     function (RegisterTemplateRootsEvent $e) {
+        //         $e->roots[$this->id] = __DIR__ . '/adapters/ui/templates';
+        //         // print_r(json_encode([$e->roots[$this->id]]));echo "\n\n";exit;
+        //     }
+        // );
     }
 }
